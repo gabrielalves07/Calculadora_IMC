@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #4169e1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+body{
+    background-color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+section.container{
+    margin: auto;
+    padding: 20px 30px;
+    min-height: 100vh;
+    max-width: 810px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section>h1{
+    padding: 15px 0px 20px 0px;
+}
+
+section>h1#calc_imc{
+    padding: 15px 0px 20px 0px;
+    text-align: center;
+}
+
+section>p{
+    padding-bottom: 15px;
+}
+
+aside#info>div.tab_imc{
+    display: inline-block;
+    padding: 5px 40px 20px 0px;
+}
+
+aside#info>div.tab_imc li{
+    list-style-type: none;
+    line-height: 1.8em;
+}
+
+aside#info>div.tab_imc h2{
+    font-size: 1.2em;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+form input{
+    border: 1px solid rgba(0, 0, 0, 0.555);
+    border-radius: 15px;
+    background-color: white;
+    height: 45px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+form input:focus{
+    border: 2px solid var(--primary-color);
+    background-color: white;
+}
+
+form button#button{
+    margin-top: 13px;
+    margin-bottom: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    height: 45px;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
+form button#button:hover{
+    transition: 0.4s;
+    background-color: #3758bb;
+}
+
+output>p.estilo_output_bad{
+    text-align: center; 
+    color: tomato;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+output>p.estilo_output_nice{
+    text-align: center; 
+    color: rgb(18, 189, 18); 
+    font-weight: bold;
+    padding-top: 10px;
+}
